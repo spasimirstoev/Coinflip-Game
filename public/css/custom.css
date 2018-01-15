@@ -1,0 +1,97 @@
+#wrapperImage .text {
+	position:relative;
+	visibility:hidden;
+}
+
+#wrapperImage:hover .text {
+	visibility:visible;
+}
+#wrapperImageTail .text {
+	position:relative;
+	visibility:hidden;
+}
+
+#wrapperImageTail:hover .text {
+	visibility:visible;
+}
+.cursorPointer{
+	cursor: pointer;
+}
+.error, .loseImg, .winImg, .test, .hideWin, .hideLoose, #animation, .hideLooseWin,
+.hideWinLoose{
+	display: none;
+}
+body {
+	overflow: hidden;
+}
+
+.coin-flip{
+	  width: 100px;
+	  height: 100px;
+	  left: 0;
+	  right: 0;
+	  margin: auto;
+	  transform-style: preserve-3d;
+	  position: absolute;
+	  animation: fly 1.5s ease-in-out 0s infinite alternate;
+}
+.coin-flip img{
+	width: 100px;
+}
+
+.coin-heads, .coin-tails {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.coin-heads{
+	animation: flip-head 1s linear 0s infinite alternate;
+}
+.coin-tails{
+	animation: flip-tail 1s linear 0s infinite alternate;
+}
+
+@keyframes fly {
+	0% { top: 100%; }
+	100% { top: 0%; }
+}
+
+@keyframes flip-head {
+	0%, 100% { transform: rotateX(0deg); }
+	50% { transform: rotateX(180deg); }
+}
+
+@keyframes flip-tail {
+	0%, 100% { transform: rotateX(180deg); }
+	50% { transform: rotateX(0deg); }
+}
+/*class for rounding angles*/
+.roundAngle{
+	border-radius: 50%;
+}
+.headingTitle{
+	color:rgb(54, 105, 188);
+}
+#loginForm{
+	margin:10% 0% 0% 0%;
+}
+#loginBtn{
+	margin:2% 0% 0% 0%;
+}
+#betBtn{
+	margin: 9px 0px 0px 0px;
+}
+#amountBet{
+	height:30px;
+	width: 80px;
+	font-weight: bold;
+}
+.smallBtn{
+	margin: -3px 0px 0px 0px;
+}
+#balanceAmount{
+	margin: 14px 14px 0px 0px;
+	font-weight: bold;
+}

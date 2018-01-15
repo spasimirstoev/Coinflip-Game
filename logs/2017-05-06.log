@@ -1,0 +1,57 @@
+ERROR - 2017-05-06 10:39:12 - ErrorException: Memcache::connect(): Server 10.10.10.140 (tcp 11211, udp 0) failed with: A socket operation was attempted to an unreachable host.
+ (10065) in C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Libraries\Connectors\MemcachedConnector.php:47
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(8, 'Memcache::conne...', 'C:\\wamp64\\www\\k...', 47, Array)
+#1 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Libraries\Connectors\MemcachedConnector.php(47): Memcache->connect('10.10.10.140', 11211)
+#2 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Libraries\Connectors\MemcachedConnector.php(101): Yee\Libraries\Connectors\MemcachedConnector->connect()
+#3 C:\wamp64\www\kinguin_Tasks\App\Controllers\LoginController\LoginController.php(18): Yee\Libraries\Connectors\MemcachedConnector->set('space', 'spaceeee')
+#4 [internal function]: LoginController->indexAction()
+#5 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#6 [internal function]: Yee\Managers\Controller\Controller::__callStatic('indexAction', Array)
+#7 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Route.php(462): call_user_func_array('LoginController...', Array)
+#8 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Yee.php(1333): Yee\Route->dispatch()
+#9 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#10 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#11 C:\wamp64\www\kinguin_Tasks\App\MiddleWare\RequestsPerSecondMiddleWare.php(25): Yee\Middleware\MethodOverride->call()
+#12 C:\wamp64\www\kinguin_Tasks\App\MiddleWare\RequestsPerSecondMiddleWare.php(10): App\MiddleWare\RequestsPerSecondMiddleWare->checkRequestsPerSecond()
+#13 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Yee.php(1278): App\MiddleWare\RequestsPerSecondMiddleWare->call()
+#14 C:\wamp64\www\kinguin_Tasks\public\index.php(39): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-05-06 10:39:15 - ErrorException: Memcache::connect(): Server 10.10.10.140 (tcp 11211, udp 0) failed with: A socket operation was attempted to an unreachable host.
+ (10065) in C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Libraries\Connectors\MemcachedConnector.php:47
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(8, 'Memcache::conne...', 'C:\\wamp64\\www\\k...', 47, Array)
+#1 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Libraries\Connectors\MemcachedConnector.php(47): Memcache->connect('10.10.10.140', 11211)
+#2 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Libraries\Connectors\MemcachedConnector.php(101): Yee\Libraries\Connectors\MemcachedConnector->connect()
+#3 C:\wamp64\www\kinguin_Tasks\App\Controllers\LoginController\LoginController.php(18): Yee\Libraries\Connectors\MemcachedConnector->set('space', 'spaceeee')
+#4 [internal function]: LoginController->indexAction()
+#5 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#6 [internal function]: Yee\Managers\Controller\Controller::__callStatic('indexAction', Array)
+#7 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Route.php(462): call_user_func_array('LoginController...', Array)
+#8 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Yee.php(1333): Yee\Route->dispatch()
+#9 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#10 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#11 C:\wamp64\www\kinguin_Tasks\App\MiddleWare\RequestsPerSecondMiddleWare.php(25): Yee\Middleware\MethodOverride->call()
+#12 C:\wamp64\www\kinguin_Tasks\App\MiddleWare\RequestsPerSecondMiddleWare.php(10): App\MiddleWare\RequestsPerSecondMiddleWare->checkRequestsPerSecond()
+#13 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Yee.php(1278): App\MiddleWare\RequestsPerSecondMiddleWare->call()
+#14 C:\wamp64\www\kinguin_Tasks\public\index.php(39): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-05-06 10:39:17 - ErrorException: Memcache::connect(): Server 10.10.10.140 (tcp 11211, udp 0) failed with: A socket operation was attempted to an unreachable host.
+ (10065) in C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Libraries\Connectors\MemcachedConnector.php:47
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(8, 'Memcache::conne...', 'C:\\wamp64\\www\\k...', 47, Array)
+#1 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Libraries\Connectors\MemcachedConnector.php(47): Memcache->connect('10.10.10.140', 11211)
+#2 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Libraries\Connectors\MemcachedConnector.php(101): Yee\Libraries\Connectors\MemcachedConnector->connect()
+#3 C:\wamp64\www\kinguin_Tasks\App\Controllers\LoginController\LoginController.php(18): Yee\Libraries\Connectors\MemcachedConnector->set('space', 'spaceeee')
+#4 [internal function]: LoginController->indexAction()
+#5 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#6 [internal function]: Yee\Managers\Controller\Controller::__callStatic('indexAction', Array)
+#7 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Route.php(462): call_user_func_array('LoginController...', Array)
+#8 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Yee.php(1333): Yee\Route->dispatch()
+#9 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#10 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#11 C:\wamp64\www\kinguin_Tasks\App\MiddleWare\RequestsPerSecondMiddleWare.php(25): Yee\Middleware\MethodOverride->call()
+#12 C:\wamp64\www\kinguin_Tasks\App\MiddleWare\RequestsPerSecondMiddleWare.php(10): App\MiddleWare\RequestsPerSecondMiddleWare->checkRequestsPerSecond()
+#13 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Yee.php(1278): App\MiddleWare\RequestsPerSecondMiddleWare->call()
+#14 C:\wamp64\www\kinguin_Tasks\public\index.php(39): Yee\Yee->execute()
+#15 {main}

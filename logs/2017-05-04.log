@@ -1,0 +1,36 @@
+ERROR - 2017-05-04 11:13:26 - exception 'ErrorException' with message 'Undefined index: db1' in C:\wamp64\www\kinguin_Tasks\App\Models\GameModel\GameModel.php:14
+Stack trace:
+#0 C:\wamp64\www\kinguin_Tasks\App\Models\GameModel\GameModel.php(14): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\wamp64\\www\\k...', 14, Array)
+#1 C:\wamp64\www\kinguin_Tasks\App\Controllers\GameController\GameController.php(46): App\Models\GameModel\GameModel->__construct()
+#2 [internal function]: GameController->indexAction()
+#3 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#5 [internal function]: GameController::___indexAction()
+#6 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Route.php(462): call_user_func_array('GameController:...', Array)
+#7 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Yee.php(1333): Yee\Route->dispatch()
+#8 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\wamp64\www\kinguin_Tasks\App\MiddleWare\RequestsPerSecondMiddleWare.php(25): Yee\Middleware\MethodOverride->call()
+#11 C:\wamp64\www\kinguin_Tasks\App\MiddleWare\RequestsPerSecondMiddleWare.php(10): App\MiddleWare\RequestsPerSecondMiddleWare->checkRequestsPerSecond()
+#12 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): App\MiddleWare\RequestsPerSecondMiddleWare->call()
+#13 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#14 C:\wamp64\www\kinguin_Tasks\public\index.php(39): Yee\Yee->execute()
+#15 {main}
+ERROR - 2017-05-04 11:13:27 - exception 'ErrorException' with message 'Undefined index: db1' in C:\wamp64\www\kinguin_Tasks\App\Models\GameModel\GameModel.php:14
+Stack trace:
+#0 C:\wamp64\www\kinguin_Tasks\App\Models\GameModel\GameModel.php(14): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\wamp64\\www\\k...', 14, Array)
+#1 C:\wamp64\www\kinguin_Tasks\App\Controllers\GameController\GameController.php(46): App\Models\GameModel\GameModel->__construct()
+#2 [internal function]: GameController->indexAction()
+#3 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#5 [internal function]: GameController::___indexAction()
+#6 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Route.php(462): call_user_func_array('GameController:...', Array)
+#7 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Yee.php(1333): Yee\Route->dispatch()
+#8 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#9 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 C:\wamp64\www\kinguin_Tasks\App\MiddleWare\RequestsPerSecondMiddleWare.php(25): Yee\Middleware\MethodOverride->call()
+#11 C:\wamp64\www\kinguin_Tasks\App\MiddleWare\RequestsPerSecondMiddleWare.php(10): App\MiddleWare\RequestsPerSecondMiddleWare->checkRequestsPerSecond()
+#12 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Middleware\PrettyExceptions.php(67): App\MiddleWare\RequestsPerSecondMiddleWare->call()
+#13 C:\wamp64\www\kinguin_Tasks\vendor\yeephp\yeephp\Yee\Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#14 C:\wamp64\www\kinguin_Tasks\public\index.php(39): Yee\Yee->execute()
+#15 {main}

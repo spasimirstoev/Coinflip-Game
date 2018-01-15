@@ -1,0 +1,53 @@
+{% include './common/header.twig' %}
+		<div class="row">
+			<h3 class="col-md-offset-4 headingTitle">Do you choose HEADS or TAILS?</h3>
+		</div>
+		<div class="row">
+			<div class="col-md-3"></div>	
+				<div class="col-md-3 wrapperImage" id='headHide'>
+					<img src="images/heads.jpg" id="headsCoin" data-value="heads" value="heads"
+				 class="img-circle cursorPointer" alt="NO IMAGE" width="180" height="180">
+				 	<p class="text"id="headText">Click on image to choose HEADS</p>
+				</div>
+				<div class="col-md-1" id="middleCoinSpace"></div>
+				<div class="col-md-3 wrapperImage" id='tailHide'>
+					 <img src="images/tails.jpg" id="tailsCoin" data-value="tails" value="tails" class="img-circle cursorPointer" alt="NO IMAGE" width="180" height="180">
+				 	<p class="text" id="tailText">Click on image to choose TAILS</p>
+				</div>
+				<div class="col-md-2"></div>					
+			</div>
+			<div class="row">
+				<p class="error col-md-offset-6">Please choose HEAD or TAILS and then press START</p>
+				<button type="submit" id="start_btn" class="btn btn-primary btn-lg col-md-offset-6" 
+				data-value="start" value="start">START</button>
+			</div>
+		</div>
+	<!-- END OF CONT-->	
+	
+	<!-- NEW CONTAINER -->
+	<div class="container" id='showResult'>			
+		<img src="images/heads350x350.jpg" class="img-circle headImg test col-md-offset-5" alt="NO IMAGE" width="220" height="220">
+		<img src="images/tails350x350.jpg" class="img-circle tailImg test col-md-offset-5" alt="NO IMAGE" width="220" height="220">
+		<img src="images/win.jpg" class="img-circle winImg test col-md-offset-5" alt="NO IMAGE" width="130" height="130">
+		<img src="images/lose.jpg" class="img-circle loseImg test col-md-offset-5" alt="NO IMAGE" width="130" height="130">
+	</div>
+	<!-- END OF CONT-->	
+	
+	<!-- NEW ANIMATE CONTAINER -->
+	<div class="container" id="animation">
+		<div class="coin-flip">
+				<div class="coin-tails">
+					<img class="roundAngle" src="images/tails.jpg" alt="NO IMAGE">
+				</div>
+				<div class="coin-heads">
+				<img class="roundAngle" src="images/heads.jpg" alt="NO IMAGE">
+			</div>
+		</div>
+	</div>
+		<!-- END ANIMATE CONTAINER -->
+	<script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <!--<script src="/js/testRequestsJquery.js"></script>-->
+</body>
+</html>
