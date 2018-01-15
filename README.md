@@ -1,2 +1,11 @@
-# yeephp
-YeePHP is a framework designed with Web Developers in mind, without overwhelming your Apps or API Projects with overheads which reflect in the performance of your final product. https://yeephp.com
+# Coinflip Game
+
+This task was given to me during my internship in Kinguin in April 2017. It is just for educational purpose - to learn HTML, CSS, Javascript, jQuery, PHP, Photoshop.
+
+To use my game please import the sql file `kinguin_tasks.sql`.
+
+---
+
+Spasimir Stoev
+
+---
