@@ -27,10 +27,5 @@ class DatabaseManager extends Yee
                 $app->db[$key] = new MemcachedConnector($database['connection.host']);
             }
     	}	
-    	
-    	
     }
-
-
-
 }
