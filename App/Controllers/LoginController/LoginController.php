@@ -36,7 +36,6 @@ class LoginController extends Controller
         $newLoginModel = new LoginModel($newUserName, $unique_form_name);
         $validateData = $newLoginModel->checkLoginValidation();
         
-
         if($validateData == false){
         	$data = array(
             "error_login" => "Please fill the field. Your name must be between 3 and 20 symbols. This name may be in use.");

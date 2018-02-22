@@ -21,17 +21,26 @@ class LoginModel{
 		$this->newCsrf = new Csrf();
 	}
 
+	/**
+	 * Generate new CsrfToken
+	 */
 	public function getCsrfToken()
 	{
 		return $this->newCsrf->generateToken($this->unique_form_name);
 	}
 
+	/**
+	 * Validate CsrfToken
+	 */
 	public function getValidateToken()
 	{
 		$token_value = $this->getCsrfToken();
 		return $this->newCsrf->validateToken($this->unique_form_name, $token_value);
 	}
 
+	/**
+	 * Validate User 
+	 */
 	public function checkLoginValidation()
 	{
 		$len = strlen($this->newUserName);
@@ -44,6 +53,9 @@ class LoginModel{
 		return true;
 	}
 
+	/**
+	 * Check User Exists
+	 */
 	public function checkUserExist()
 	{
 		if($this->checkLoginValidation() === true){

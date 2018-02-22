@@ -30,10 +30,11 @@ class GameController extends Controller
         }
         $win /= $tests;
         $lose /= $tests;
+
         echo "<pre>WIN: $win LOSE: $lose </pre>";
     }
 
-     /**
+    /**
      * @Route('/coinflip')
      * @Name('coinflip.index')
      */
@@ -83,30 +84,8 @@ class GameController extends Controller
                         );
         } else {
             $data = $newGameModel->gameLogic();
-            
-
-
-            /*
-            $fakeUser = null;
-
-            if(isset($_SESSION['ip']) && ($_SESSION['last_post'] + 0.5) > time()){
-                $fakeUser = true; 
-            } 
-
-            if($fakeUser){
-                session_unset(); 
-
-                session_destroy();
-
-                $app->redirect('/login');
-            }
-
-            $_SESSION['last_post'] = time();
-            $_SESSION['ip'] = $_SERVER['REMOTE_ADDR'];
-    */
-
-        }
-    
+                
         echo json_encode($data);
+        }
     }
 }

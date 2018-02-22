@@ -18,7 +18,6 @@ class HomeController extends Controller
         $app->render('home/home.twig', $data);
     }
 
-
      /**
      * @Route('/home')
      * @Method('POST')
@@ -33,11 +32,7 @@ class HomeController extends Controller
         $thumbWidth = 200;
 
         $newModel = new App\Models\HomeModel\HomeModel();
-        // call createThumb function and pass to it as parameters the path 
-        // to the directory that contains images, the path to the directory
-        // in which thumbnails will be placed and the thumbnail's width. 
-        // We are assuming that the path will be a relative path working 
-        // both in the filesystem, and through the web for links
+        
         $createThumb = $newModel->createThumbnail($pathToImages, $pathToThumbs, $thumbWidth);
         
         $data = array("createThumb" => $createThumb);

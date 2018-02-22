@@ -3,6 +3,9 @@ namespace App\Models\HomeModel;
 
 class HomeModel
 {
+	/**
+	 * Create a thumbnail
+	 */
 	public function createThumbnail($pathToImages, $pathToThumbs, $thumbWidth)
 	{	
 		// open the directory

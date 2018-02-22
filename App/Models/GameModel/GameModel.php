@@ -16,6 +16,9 @@ class GameModel
 		$this->balance = $this->balance["login_dollars"];
 	}
 
+	/**
+	 * Set $heads, $tails, $userBetValue
+	 */
 	public function setVariables($heads, $tails, $userBetValue)
 	{
 		$this->heads = $heads;
@@ -61,7 +64,6 @@ class GameModel
 			$newBalanceInDb = $this->getAmountDollars();
 		}
 		
-
 		// return won or lost && coin side
 		if($this->tails == 1){
 			if($coinSide == 1){
@@ -98,6 +100,9 @@ class GameModel
 		}
 	}
 
+	/**
+	 * Random generator 
+	 */
 	public function getRandom()
 	{
 		$min = 0;
@@ -105,7 +110,9 @@ class GameModel
 
 		return $min + mt_rand() / mt_getrandmax() * ($max - $min);
 	}
-
+	/**
+	 * Get user balance
+	 */
 	public function getAmountDollars()
 	{
 		if (isset($_SESSION['userIsLogged'])) {
@@ -116,11 +123,17 @@ class GameModel
 		unset($_SESSION['userIsLogged']);
 	}
 
+	/**
+	 * Check result from bet.
+	 */
 	public function securityCheck()
 	{
 		return $this->heads == 1 xor $this->tails == 1;
 	}
 
+	/**
+	 *  Validate user's balance
+	 */
 	public function securityBalance()
 	{
 		if ($this->userBetValue > $this->balance || $this->userBetValue < 1){
@@ -129,6 +142,9 @@ class GameModel
 		return true;
 	}
 
+	/**
+	 *  Validate user's balance
+	 */
 	public function setValidationUserBet()
 	{
 		if(!ctype_digit(strval($this->userBetValue)) || $this->userBetValue < 1 || $this->userBetValue > $this->balance){
@@ -137,6 +153,9 @@ class GameModel
 		return true;
 	}
 
+	/**
+	 *  Update games's statistisc
+	 */
 	public function statistics($coinSide)
 	{
 		if ($this->tails == 1){

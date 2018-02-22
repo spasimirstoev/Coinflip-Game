@@ -20,24 +20,36 @@ class StatisticsModel{
 		$this->tailWinPercentage = $this->queryStatistics[0]["tail_win"];
 	}
 
+	/**
+	 *  Statistics choosen head
+	 */
 	public function headStatistics()
 	{
 		$headStatistics = $this->headPercentage / ($this->headPercentage + $this->tailPercentage) * 100;
 		return round($headStatistics);
 	}
 
+	/**
+	 *  Statistics choosen tail
+	 */
 	public function tailStatistics()
 	{
 		$tailStatistics = $this->tailPercentage / ($this->headPercentage + $this->tailPercentage) * 100;
 		return round($tailStatistics);
 	}
 
+	/**
+	 *  Statistics for won head
+	 */
 	public function headWinStatistics()
 	{
 		$headWinStatistics = $this->headWinPercentage / ($this->headWinPercentage + $this->tailWinPercentage) * 100;
 		return round($headWinStatistics);
 	}
 
+	/**
+	 *  Statistics for won tail
+	 */
 	public function tailWinStatistics()
 	{
 		$tailWinStatistics = $this->tailWinPercentage / ($this->headWinPercentage + $this->tailWinPercentage) * 100;
